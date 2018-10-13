@@ -1,0 +1,152 @@
+/*colore-dark: #00555C;*/
+/*rgb(0, 85, 92);*/
+
+/*color-light: #006F78;
+rgb(0, 111, 120);*/
+
+
+/*color-bright-green: #A9C00F;
+color-dark-green: #94a80d;
+*/
+
+/* ------------------------------------------  */
+/* BASIC SETUP  */
+/* ------------------------------------------  */
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color:  #fff;
+  color: #555;
+  font-family: 'Lato', 'Arial', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+/* ------------------------------------------  */
+/* REUSABLE COMPONENTS  */
+/* ------------------------------------------  */
+
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+h1 {
+  margin: 0;
+  color: #fff;
+  font-size: 200%;
+  /*font-weight: 300;*/
+  letter-spacing: 1px;
+  word-spacing: 4px;
+}
+
+h2 {
+  font-size: 180%;
+  word-spacing: 2px;
+  font-weight: 300;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+/* ------------------------------------------  */
+/* HEADER  */
+/* ------------------------------------------  */
+
+header {
+  background-color: #383a46; 
+  background-size: cover;
+  background-position: center;
+  height: 80vh;  
+}
+
+.text-box {
+  position: absolute;
+  width: 1140px;
+  top: 50%;
+  left: 50%;
+  transform: translate(5%, -110%);
+  
+}
+
+/*LINKS*/
+
+a:link,
+a:visited {
+  color: #A9C00F;
+  text-decoration: none;
+  padding-bottom: 1px;
+  border-bottom: 1px solid #A9C00F;
+  transition: border-bottom 0.2s, color 0.2s; 
+}
+
+a:hover,
+a:active {
+  color: #555;
+  border-bottom: 1px solid transparent;
+}
+
+/*BUTTONS*/
+
+.btn:link,
+.btn:visited,
+input[type=submit] {
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 3px;
+  transition: background-color 0.7s, border 0.7s, color 0.7s;
+}
+
+
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit] {
+  background-color: #A9C00F;
+  border: 1px solid #A9C00F;
+  color: #fff;
+  margin-right: 30px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+  border: 1px solid #A9C00F;
+  color: #A9C00F;
+}
+
+.btn:hover,
+.btn:active
+ {
+   background-color: #94a80d;
+}
+
+.btn-full:hover,
+.btn-full:active, 
+input[type=submit]:hover,
+input[type=submit]:active {
+  border: 1px solid #94a80d;
+  
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+  border: 1px solid #94a80d;
+  color: #fff;
+}
+
+
+
+
+
+
