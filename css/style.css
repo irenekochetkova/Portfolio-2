@@ -101,14 +101,16 @@ h2:after {
   margin-top: 30px;
 }
 
-/*.font {
-  color: #7E8F0B;
+.font {
+  color: #555;
+  /*color: #94a80d;*/
   font-weight: 400;
-}*/
+}
 
-/*.font-color {
+.font-color {
   color: #94a80d;
-}*/
+  font-weight: 400;
+}
 
 /*LINKS*/
 
@@ -215,6 +217,14 @@ input[type=submit]:active {
   margin-bottom: 40px;
 }
 
+.u-margin-bottom {
+  margin-bottom: 0 !important;
+}
+
+.u-border {
+  border-bottom: 1px dotted #A9C00F;
+}
+
 /*ICONS*/
 
 .icon-big {
@@ -229,6 +239,38 @@ input[type=submit]:active {
   color: #94a80d;
 }
 
+/*ICON WITH TITLE*/
+
+.title {
+  width: 100%; 
+}
+
+.inside {
+  display: table;
+  margin-bottom: 40px;
+}
+
+
+.inside i {
+  color: #fff;
+  font-size: 150%;
+  background-color: #383a46;
+  padding: 5px 15px 5px 15px;
+  display: table-cell;
+  height: 100%;
+}
+
+.text-box-work {
+  font-weight: 300;
+  background-color: #A9C00F;
+  color: #fff;
+  display: table-cell;  
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
+  vertical-align: middle;
+
+}
 
 
 /* ------------------------------------------  */
@@ -306,7 +348,7 @@ header {
 }
 
 /* ------------------------------------------  */
-/* MY LATEST WORK */
+/* MY PROJECTS */
 /* ------------------------------------------  */
 
 .section-portfolio {
@@ -321,41 +363,30 @@ header {
    /*padding: 35px; */
 }
 
-.title {
+
+
+/* ------------------------------------------  */
+/* IN DETAILS */
+/* ------------------------------------------  */
+.section-details {
+  /*background-color: #ebebeb;*/
+   
+}
+
+
+
+.img-details {
   width: 100%;
-  /*float: right;*/
-}
-
-.inside {
-  display: table;
-  margin-bottom: 40px;
-}
-
-/*.icon-small {
-  
-  float: left;
-  
-}*/
-
-.inside i {
-  color: #fff;
-  font-size: 200%;
-  background-color: #383a46;
-  padding: 5px 15px 5px 15px;
-  display: table-cell;
-  height: 100%;
-}
-
-.text-box-work {
-  font-weight: 300;
-  background-color: #94a80d;
-  color: #fff;
-   display: table-cell;
-  /*padding: 10px 10px 10px 80px;*/
-  padding-left: 10px;
-  padding-right: 10px;
-  width: 100%;
-  vertical-align: middle;
+  height: auto;
+  /*margin-bottom: 15px;*/
+  border: 2px solid #94a80d;
 
 }
+
+.box-project li {
+  margin-bottom: 5px;
+}
+
+#more {display: none;}
+
 

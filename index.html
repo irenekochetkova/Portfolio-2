@@ -63,7 +63,7 @@
   </header>
 
   <section class="section-portfolio" id="works">
-    <div class="u-margin-bottom-big ">
+    <div class="row u-margin-bottom-big ">
       <h2>My projects</h2>
     </div>
     <div class="row">
@@ -87,6 +87,126 @@
     <a href="#s" ><i class="ion-ios-arrow-down icon-big u-center-text"></i></a>
   </section>
 
+  <section class="section-details" id="ditails">
+    <div class="row u-margin-bottom-big ">
+      <h3 class="font u-center-text">Project Homemade food</h3>
+    </div>
+    <div class="row ">
+      <div class="title inside u-margin-bottom"> 
+        <i class="ion-home icon-small"></i>
+        <h3 class="text-box-work ">Home page about</h3>
+      </div>
+    </div>
+    <div class="row ">
+      <div class="col span-1-of-2 box ">
+        <img src="img/home-page.gif" alt="home-page" class="img-details">
+      </div> 
+      <div class="col span-1-of-2 box box-project  ">
+        <ul>
+          <li> Every user can see Home page with descriptions about service of this site and all chefs that provide homemade food through this site. 
+          </li>
+          <li>The user can use the button “login” on the home-page that is implemented with the Modal plugin of bootstrap or login through the button in the navbar, that leads to the login page.
+          </li>
+          <!-- <li>If the users want to sell their own homemade food they should create an account as a chef and choose an option “chef”.</li> -->
+        </ul>
+      </div> 
+    </div>
+
+    <div class="row u-border u-margin-bottom-small"></div>
+
+    <div class="row">
+      <div class="title inside u-margin-bottom"> 
+        <i class="ion-android-person icon-small"></i>
+        <h3 class="text-box-work ">Authentication registration</h3>
+      </div>
+    </div>
+    <div class="row ">
+       
+      <div class="col span-1-of-2 box box-project">
+        <ul>
+          <li>Users can create an account (sing up), edit and delete. Also they can change a password. 
+          </li>
+          <li>The validation is implemented when the user signs up or logins.</li>
+          <li>Chef`s account differs customer`s account by the access to the actions. The chefs have the rights to create new dish, and the customers have the rights to see their orders and shopping cart.</li>
+        </ul>       
+      </div>
+      <div class="col span-1-of-2 box ">
+        <img src="img/home-page.gif" alt="home-page" class="img-details">
+      </div> 
+    </div>
+
+    <div class="row u-border u-margin-bottom-small"></div>
+
+    <div class="row">
+      <div class="title inside u-margin-bottom"> 
+        <i class="ion-ios-list icon-small"></i>
+        <h3 class="text-box-work ">User Logged as a chef</h3>
+      </div>
+    </div>
+    <div class="row ">
+      <div class="col span-1-of-2 box ">
+        <img src="img/home-page.gif" alt="home-page" class="img-details">
+      </div> 
+      <div class="col span-1-of-2 box box-project">
+        <ul>
+          <li> Every logged user can see Menu page with dishes from all chefs. 
+          </li>
+          <li>Every logged user can use the filter to search dish by the name.</li>
+          <li>Every user can use the filter to search dish by cuisine.</li>
+          <li>Chefs can use the filter to search only their own dishes.</li>
+          <li>Every user can press the button on card of every dish “More info” and get more information about current dish.</li><span class="font-color" id="dots">...</span><span id="more">
+          <li> If Chefs press this button they can see the rights to edit and delete current own dish.</li>
+          <li> Chefs don’t have the right  to edit and delete dishes, that were not created by them.</li>
+           <li> The chefs have the rights to create new dish and they can get Dihes-new Page  through their account. 
+          </li>
+          <li>The chefs have the rights to edit their own dishes and they can get Dihes-edit Page  on Menu Page through the current dish.
+          </li>
+          <li>The validation is implemented when the user presses button “submit”.
+          </li>
+        </ul>
+        <a class="font-color " onclick="readMore()" id="myBtn">Read more</a>       
+      </div> 
+    </div>
+
+    <div class="row u-border u-margin-bottom-small"></div>
+
+    <div class="row">
+      <div class="title inside u-margin-bottom"> 
+        <i class="ion-coffee icon-small"></i>
+        <h3 class="text-box-work ">User Logged as a customer</h3>
+      </div>
+    </div>
+    <div class="row ">
+      
+      <div class="col span-1-of-2 box box-project">
+        <ul>
+          <li> Every logged user can see Menu page with dishes from all chefs. 
+          </li>
+          <li>Every logged user can use the filter to search dish by the name.
+          </li>
+          <li> Every user can use the filter to search dish by cuisine.</li>
+          <li>  Every user can press the button on card of every dish “More info” and get more information about current dish.</li>
+          <li>If customers press this button it will allow to add the dish to their shopping cart with required amount.</li><span class="font-color" id="dots2">...</span><span id="more2">
+          <li> Customers can not see buttons to edit and delete dish.</li>
+          <li>Only customers can see icon-button carted shop to go to the page shopping cart and button to go to their orders.</li>
+          <li>Customer-users can see the amount of items in the shopping cart.</li>
+          <li>Customer-users can see your Shopping cart page where every carted dish includes price, quantity and subtotal sum.</li>
+          <li>Customer-users can delete cartedDish.</li>
+          <li>Customer-users can see total sum their purchases.</li>
+          <li>Customer-users can create an order if press button "checkout".</li>
+          <li>Customer-users can see their purchases on the Orders page.</li>
+          <li>Customer-users can cancel their orders.</li></span>
+        </ul>
+        <a class="font-color " onclick="readMore2()" id="myBtn2">Read more</a>       
+      </div>
+      <div class="col span-1-of-2 box ">
+        <img src="img/home-page.gif" alt="home-page" class="img-details">
+      </div>  
+    </div>
+    
+    <div class="row u-border u-margin-bottom-small"></div>
+  </section>
+
 
 
 
@@ -98,7 +218,7 @@
   <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js" ></script>
   <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js" ></script>
   <!-- <script src="vendors/js/jquery.waypoints.min.js"></script> -->
-  <!-- <script src="script.js"></script> -->
+  <script src="js/script.js"></script>
   
 
 
