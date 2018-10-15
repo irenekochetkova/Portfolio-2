@@ -26,32 +26,32 @@
 
 </head>
 <body>
-  <header >
-    <nav class="sticky ">
-      <div class="row u-margin-bottom-big">
-        <h1 class="logo">Irina Kochetkova</h1>
+  <header>
+    
+    <nav >
+      <div class="row ">
+        <img src="img/logo-white-port.png" alt="Omnifood" class="logo">
+        <img src="img/logo-black-port.png" alt="Omnifood" class="logo-black">
         
-
-        <!-- <img src="img/logo-portfolio.png" alt="Name" class="logo"> -->
-        <!-- <img src="img/logo.png" alt="Name" class="logo-black"> -->
-        <ul class="main-nav js--main-nav">
+        <ul class="main-nav ">
           <li><a href="#about">About</a></li>
           <li><a href="#works">Portfolio</a></li>
-          <!-- <li><a href="#details">Our cities</a></li> -->
+          
           <li><a href="#contact">Contact me</a></li>
         </ul>
-        <!-- <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a> -->
+        
       </div>
     </nav>
+
     
     <div class="row ">
-      <div class="col span-1-of-2 box ">
+      <div class="col span-1-of-2 box text-box">
         <img src="img/lisa.png" alt="Name" class="photo ">
       </div>
       <div class=" col text-box span-1-of-2 box ">
 
         <h3> I`m Irina</h3>
-        <h3> I am a Designer / Front End Developer</h3>
+        <h3>Front End Developer</h3>
         <h4>I'm a web developer who enjoy building web  apps, continuously learning, dedicated and energetic person. One of my principles is constantly striving to improve own work and better the company as a whole.</h4>
         <a class="btn btn-full" href="#">My Work</a>
         <a class="btn btn-ghost" href="#">Contact Me</a>
@@ -59,20 +59,25 @@
 
     </div>
 
+
     
   </header>
 
-  <section class="section-portfolio" id="works">
-    <div class="row u-margin-bottom-big ">
+  <section class="row">
       <h2>My projects</h2>
-    </div>
-    <div class="row">
-      <div class="col span-1-of-2 box">
-        <img src="img/homemade.png" alt="Name" class="img-work">
+    </section>
+
+  <section class="section-portfolio u-background js--section-portfolio" id="works">
+   <!--  <div class="row u-margin-bottom-big ">
+      <h2>My projects</h2>
+    </div> -->
+    <div class="row u-background">
+      <div class="col span-1-of-2 box u-background">
+        <img src="img/homemade-2.png" alt="Name" class="img-work">
       </div>
     
       <div class="col span-1-of-2  box ">
-        <div class="title inside"> 
+        <div class="title inside u-margin-bottom-small"> 
         <i class="ion-ios-cart icon-small"></i>
         <h3 class="text-box-work ">Homemade Food</h3>
         </div> 
@@ -84,23 +89,31 @@
          <a class="btn btn-ghost " href="#">Learn more</a>
       </div>
     </div>
-    <a href="#s" ><i class="ion-ios-arrow-down icon-big u-center-text"></i></a>
-  </section>
-
-  <section class="section-details" id="ditails">
-    <div class="row u-margin-bottom-big ">
-      <h3 class="font u-center-text">Project Homemade food</h3>
+    <div class="">
+      <a href="#" ><i class="ion-ios-arrow-down icon-big u-center-text"></i></a>
     </div>
+    </section>
+
+  <section class="section-details-food" id="ditails">
+    <!-- <div class="row u-margin-bottom-big ">
+      <h3 class="font u-center-text">Project Homemade food</h3>
+    </div> -->
     <div class="row ">
-      <div class="title inside u-margin-bottom"> 
+      <div class="title inside "> 
         <i class="ion-home icon-small"></i>
         <h3 class="text-box-work ">Home page about</h3>
       </div>
     </div>
     <div class="row ">
       <div class="col span-1-of-2 box ">
-        <img src="img/home-page.gif" alt="home-page" class="img-details">
-      </div> 
+        <!-- <img src="img/home-page.gif" alt="home-page" class="img-details"> -->
+        <figure class="page-home"><img src="img/home-page.gif" alt="page-home" class="img-details-big"></figure>
+      </div>
+
+
+      
+
+
       <div class="col span-1-of-2 box box-project  ">
         <ul>
           <li> Every user can see Home page with descriptions about service of this site and all chefs that provide homemade food through this site. 
@@ -131,7 +144,7 @@
         </ul>       
       </div>
       <div class="col span-1-of-2 box ">
-        <img src="img/home-page.gif" alt="home-page" class="img-details">
+         <figure class="page-home"><img src="img/home-page.gif" alt="page-home" class="img-details-big"></figure>
       </div> 
     </div>
 
@@ -139,13 +152,13 @@
 
     <div class="row">
       <div class="title inside u-margin-bottom"> 
-        <i class="ion-ios-list icon-small"></i>
+        <i class="ion-coffee icon-small"></i>
         <h3 class="text-box-work ">User Logged as a chef</h3>
       </div>
     </div>
     <div class="row ">
       <div class="col span-1-of-2 box ">
-        <img src="img/home-page.gif" alt="home-page" class="img-details">
+         <figure class="page-home"><img src="img/home-page.gif" alt="page-home" class="img-details-big"></figure>
       </div> 
       <div class="col span-1-of-2 box box-project">
         <ul>
@@ -172,7 +185,7 @@
 
     <div class="row">
       <div class="title inside u-margin-bottom"> 
-        <i class="ion-coffee icon-small"></i>
+        <i class="ion-android-restaurant icon-small"></i>
         <h3 class="text-box-work ">User Logged as a customer</h3>
       </div>
     </div>
@@ -200,24 +213,106 @@
         <a class="font-color " onclick="readMore2()" id="myBtn2">Read more</a>       
       </div>
       <div class="col span-1-of-2 box ">
-        <img src="img/home-page.gif" alt="home-page" class="img-details">
+         <figure class="page-home"><img src="img/home-page.gif" alt="page-home" class="img-details-big"></figure>
       </div>  
     </div>
     
     <div class="row u-border u-margin-bottom-small"></div>
   </section>
 
+  <section class="section-second-project u-background">
+    <div class="row">
+      <div class="col span-1-of-2  box">
+        <img src="img/photo-2.png" alt="Name" class="img-work">
+      </div>
+    
+      <div class="col span-1-of-2  box ">
+        <div class="title inside u-margin-bottom-small"> 
+        <i class="ion-camera icon-small"></i>
+        <h3 class="text-box-work ">Photo & video service</h3>
+        </div> 
+        <p class="u-margin-bottom-small">This website unites chefs and customers. The chefs can sell their own homemade food and customer can order it. If the users want to sell their own homemade food they should create an account as a chef and choose an option “chef”. If the users want to order homemade food.
+        </p>
+
+         <!-- <a href="/#/details" class="btn-text">Learn more about project  &rarr;</a> -->
+
+         <a class="btn btn-ghost " href="#">Learn more</a>
+      </div>
+    </div>
+    <div class="">
+      <a href="#" ><i class="ion-ios-arrow-down icon-big u-center-text"></i></a>
+    </div>
+  </section>
+
+  <section class="section-details-photo">
+    <div class="row">
+      <img src="img/photo-2.gif" alt="home-page" class="img-details">
+    </div>
+  </section>
+
+  <section class="section-contact" id="contact">
+    <div class="row">
+      <div class="u-margin-bottom-big contact">
+        <h3 class="u-center-text font-white ">Let`s Get In Touch!</h3>
+      </div>
+    
+      <div class="u-center-text">
+        <p>Want to get in touch with me? Want to learn more about my skills? Feel free to contact me anytime.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col span-1-of-3 box u-center-text">
+        <a href="#" ><i class="ion-ios-telephone-outline icon-contact u-center-text"></i></a>
+        <p class="font-small" >+1 (650) 285-81-81</p>
+      </div>
+      <div class="col span-1-of-3 box u-center-text">
+        <a href="#" ><i class="ion-ios-email-outline icon-contact u-center-text"></i></a>
+        <p class="font-small" >irenekochetkova@gmail.com</p>
+      </div>
+      
+      <div class="col span-1-of-3 box u-center-text">
+        <a href="#" ><i class="ion-social-github-outline icon-contact u-center-text"></i></a>
+        <p class="font-small" >irenekochetkova</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="row">
+      <div class="col span-1-of-2">
+        <ul class="footer-nav ">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Details</a></li>    
+          <li><a href="#">Contact</a></li>
+          
+        </ul>
+      </div>
+      <div class="col span-1-of-2">
+        <ul class="social-links">
+          <li><a href="#"><i class="ion-social-facebook"></i></a></li><li><a href="#"><i class="ion-social-twitter"></i></a></li><li><a href="#"><i class="ion-social-googleplus"></i></a></li><li><a href="#"><i class="ion-social-instagram"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <p>
+        Copyright &copy; 2018 Portfolio. All rights reserved.
+      </p>
+    </div>
+  </footer>
 
 
 
 
 
 
+  <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js" ></script>
   <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js" ></script>
   <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js" ></script>
-  <!-- <script src="vendors/js/jquery.waypoints.min.js"></script> -->
+  <script src="js/jquery.waypoints.min.js"></script>
   <script src="js/script.js"></script>
   
 

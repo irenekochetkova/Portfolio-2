@@ -30,3 +30,42 @@ function readMore2() {
   }
 }
 
+// ==================================================
+// MODAL
+// ==================================================
+
+// $(function () {
+//   $('.popup-modal').magnificPopup({
+//     type: 'inline',
+//     preloader: false,
+//     focus: '#username',
+//     modal: true
+//   });
+//   $(document).on('click', '.popup-modal-dismiss', function (e) {
+//     e.preventDefault();
+//     $.magnificPopup.close();
+//   });
+// });
+
+$(document).ready(function() {
+
+  // for the sticky
+
+  $('.js--section-portfolio').waypoint(function(direction) {
+    if (direction == "down") {
+      $('nav').addClass('sticky');
+    } else {
+      $('nav').removeClass('sticky');
+    }
+  }, {
+  offset: '60px;'
+  });
+
+}); 
+
+
+
+
+
+
+
