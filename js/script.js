@@ -61,6 +61,23 @@ $(document).ready(function() {
   offset: '60px;'
   });
 
+  //hide/show
+
+
+  $("#show").click(function(){
+        $(".section-details-food").toggle(1000);
+    });
+
+
+
+  $("#show-2").click(function(){
+    $(".section-details-food").show(1000);
+  });
+
+  $("#hide").click(function(){
+        $(".section-details-food").hide(1000);
+    });
+
 }); 
 
 
