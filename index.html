@@ -10,8 +10,8 @@
   <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
   <!-- <link rel="stylesheet" type="text/css" href="vendors/css/animate.css"> -->
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <!-- <link rel="stylesheest" type="text/css" href=css/queries.css"> -->
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400"> 
+  <link rel="stylesheet" type="text/css" href="css/queries.css">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400,700"> 
 
   <title>Irina Kochetkova</title>
 
@@ -33,28 +33,34 @@
         <img src="img/logo-white-port.png" alt="Kochetkova" class="logo">
         <img src="img/logo-black-port.png" alt="Kochetkova" class="logo-black">
         
-        <ul class="main-nav ">
+        <ul class="main-nav js--main-nav">
           <li><a href="#about">About</a></li>
           <li><a href="#works">Portfolio</a></li>
           
           <li><a href="#contact">Contact me</a></li>
         </ul>
-        
+        <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
       </div>
     </nav>
 
     
-    <div class="row ">
+    <div class="row" id="about"> 
       <div class="col span-1-of-2 box text-box">
         <img src="img/lisa.png" alt="Name" class="photo ">
       </div>
       <div class=" col text-box span-1-of-2 box ">
 
-        <h3> I`m Irina</h3>
-        <h3>Front End Developer</h3>
+        <h3> I`m Irina, a Front End Developer</h3>
+        <!-- <h3>Front End Developer</h3> -->
         <h4>I'm a web developer who enjoy building web  apps, continuously learning, dedicated and energetic person. One of my principles is constantly striving to improve own work and better the company as a whole.</h4>
-        <a class="btn btn-full" href="#">My Work</a>
-        <a class="btn btn-ghost" href="#">Contact Me</a>
+        <h3 class="u-margin-bottom-small">Work experience</h3>
+        <ul class="list u-margin-bottom-middle">
+          <li class="font-white item-list">JavaScript, VueJS, Ruby on Rails, HTML, Sass, CSS, Git, MySQL and jQuery;</li>
+          <li class="font-white item-list">Creating responsive web applications.</li>
+        </ul>
+
+        <a class="btn btn-full js--scroll-to-work" href="#works">My Work</a>
+        <a class="btn btn-ghost js--scroll-to-contact" href="#contact">Contact Me</a>
       </div>
 
     </div>
@@ -63,15 +69,15 @@
     
   </header>
 
-  <section class="row">
+  <section class="row js--scroll-work" id="works">
       <h2>My projects</h2>
-    </section>
+  </section>
 
   <section class="section-portfolio u-background js--section-portfolio" id="works">
    <!--  <div class="row u-margin-bottom-big ">
       <h2>My projects</h2>
     </div> -->
-    <div class="row u-background">
+    <div class="row u-background ">
       <div class="col span-1-of-2 box u-background">
         <img src="img/homemade-2.png" alt="Name" class="img-work">
       </div>
@@ -81,20 +87,30 @@
         <i class="ion-ios-cart icon-small"></i>
         <h3 class="text-box-work ">Homemade Food</h3>
         </div> 
-        <p class="u-margin-bottom-small">This website unites chefs and customers. The chefs can sell their own homemade food and customer can order it. If the users want to sell their own homemade food they should create an account as a chef and choose an option “chef”. If the users want to order homemade food.
+        <p class="u-margin-bottom-small">The main idea of this website is to unite chefs and customers. The chefs can sell their own homemade food and customer can order it. If the users want to sell their own homemade food they should create an account as a chef and choose an option "chef". If the users want to order homemade food they choose an option "customer".
         </p>
 
-         <!-- <a href="/#/details" class="btn-text">Learn more about project  &rarr;</a> -->
+        <h5 >Languages and Technologies:</h5>
+        <p class="font u-margin-bottom-small"> Ruby on Rails, VueJs, JavaScript, HTML, CSS, Bootstrap and jQuery</p>
 
-         <a class="btn btn-ghost " id="show-2" href="#details">Learn more</a>
+         <!-- <a href="/#/details" class="btn-text">Learn more about project  &rarr;</a> -->
+        <!-- <div > -->
+         <a class="btn btn-ghost js--scroll-to-homemade" id="show-2" href="#details">Learn more</a>
+         <!-- </div>
+         <div> -->
+         <a href="https://github.com/irenekochetkova/homemade_food_app" ><i class="ion-social-github-outline  icon-git"></i></a>
+       <!-- </div> -->
       </div>
     </div>
-    <div class="">
+    <div >
       <i class="ion-ios-arrow-down icon-big u-center-text" id="show"></i>
     </div>
     </section>
 
-  <section class="section-details-food" hidden id="ditails">
+  <section class="section-details-food js--scroll-homemade" hidden id="ditails">
+    <div class="row u-margin-bottom-big ">
+      <h2>Project Homemade food</h2>
+    </div>
     <!-- <div class="row u-margin-bottom-big ">
       <h3 class="font u-center-text">Project Homemade food</h3>
     </div> -->
@@ -144,7 +160,7 @@
         </ul>       
       </div>
       <div class="col span-1-of-2 box ">
-         <figure class="page-home"><img src="img/home-page.gif" alt="page-home" class="img-details-big"></figure>
+         <figure class="page-home"><img src="img/signup-page.gif" alt="page-signup" class="img-details-big"></figure>
       </div> 
     </div>
 
@@ -153,12 +169,12 @@
     <div class="row">
       <div class="title inside u-margin-bottom"> 
         <i class="ion-coffee icon-small"></i>
-        <h3 class="text-box-work ">User Logged as a chef</h3>
+        <h3 class="text-box-work ">User Logged in as a chef</h3>
       </div>
     </div>
     <div class="row ">
       <div class="col span-1-of-2 box ">
-         <figure class="page-home"><img src="img/home-page.gif" alt="page-home" class="img-details-big"></figure>
+         <figure class="page-home"><img src="img/chef-2.gif" alt="page-home" class="img-details-big"></figure>
       </div> 
       <div class="col span-1-of-2 box box-project">
         <ul>
@@ -186,20 +202,21 @@
     <div class="row">
       <div class="title inside u-margin-bottom"> 
         <i class="ion-android-restaurant icon-small"></i>
-        <h3 class="text-box-work ">User Logged as a customer</h3>
+        <h3 class="text-box-work ">User Logged in as a customer</h3>
       </div>
     </div>
     <div class="row ">
       
-      <div class="col span-1-of-2 box box-project">
+      <div class="col span-1-of-2 box box-project ">
         <ul>
+          
           <li> Every logged user can see Menu page with dishes from all chefs. 
           </li>
           <li>Every logged user can use the filter to search dish by the name.
           </li>
           <li> Every user can use the filter to search dish by cuisine.</li>
           <li>  Every user can press the button on card of every dish “More info” and get more information about current dish.</li>
-          <li>If customers press this button it will allow to add the dish to their shopping cart with required amount.</li><span class="font-color" id="dots2">...</span><span id="more2">
+          <li>If customers press this button it will allow to add the dish to their shopping cart with required amount.</li>
           <li> Customers can not see buttons to edit and delete dish.</li>
           <li>Only customers can see icon-button carted shop to go to the page shopping cart and button to go to their orders.</li>
           <li>Customer-users can see the amount of items in the shopping cart.</li>
@@ -210,10 +227,10 @@
           <li>Customer-users can see their purchases on the Orders page.</li>
           <li>Customer-users can cancel their orders.</li></span>
         </ul>
-        <a class="font-color " onclick="readMore2()" id="myBtn2">Read more</a>       
+       
       </div>
       <div class="col span-1-of-2 box ">
-         <figure class="page-home"><img src="img/home-page.gif" alt="page-home" class="img-details-big"></figure>
+         <figure class="page-home"><img src="img/customer.gif" alt="page-home" class="img-details-big"></figure>
       </div>  
     </div>
     
@@ -223,7 +240,7 @@
     </div>
   </section>
 
-  <section class="section-second-project u-background">
+  <section class="section-second-project u-background" >
     <div class="row">
       <div class="col span-1-of-2  box">
         <img src="img/photo-2.png" alt="Name" class="img-work">
@@ -234,26 +251,36 @@
         <i class="ion-camera icon-small"></i>
         <h3 class="text-box-work ">Photo & video service</h3>
         </div> 
-        <p class="u-margin-bottom-small">This website unites chefs and customers. The chefs can sell their own homemade food and customer can order it. If the users want to sell their own homemade food they should create an account as a chef and choose an option “chef”. If the users want to order homemade food.
+        <p class="u-margin-bottom-small">The main idea of this website is to provide the photography and video service to people making their life memorable.
         </p>
+        <h5 >Languages and Technologies:</h5>
+        <p class="font u-margin-bottom-small">VueJs, JavaScript, HTML and SASS</p>
 
          <!-- <a href="/#/details" class="btn-text">Learn more about project  &rarr;</a> -->
 
-         <a class="btn btn-ghost " href="#">Learn more</a>
+         <a class="btn btn-ghost js--scroll-to-photo" id="show-4" href="#details-photo">Learn more</a>
+          <a href="https://github.com/irenekochetkova/photo_video_service" ><i class="ion-social-github-outline  icon-git"></i></a>
       </div>
     </div>
     <div class="">
-      <a href="#" ><i class="ion-ios-arrow-down icon-big u-center-text"></i></a>
+      <i class="ion-ios-arrow-down icon-big u-center-text" id="show-3"></i>
     </div>
   </section>
 
-  <section class="section-details-photo">
-    <div class="row">
+  <section class="section-details-photo js--scroll-photo" hidden id="details-photo">
+    <div class="row u-margin-bottom-big ">
+      <h2>Project Photography & video</h2>
+    </div>
+    <div class="row " >
       <img src="img/photo-2.gif" alt="home-page" class="img-details-big">
     </div>
+
+    <div class="">
+      <i class="ion-ios-arrow-up icon-big u-center-text" id="hide-2"></i>
+    </div>
   </section>
 
-  <section class="section-contact" id="contact">
+  <section class="section-contact js--scroll-contact" id="contact">
     <div class="row">
       <div class="u-margin-bottom-middle contact">
         <h3 class="u-center-text font-white ">Let`s Get In Touch!</h3>
@@ -275,7 +302,7 @@
       </div>
       
       <div class="col span-1-of-3 box u-center-text">
-        <a href="#" ><i class="ion-social-github-outline icon-contact u-center-text"></i></a>
+        <a href="https://github.com/irenekochetkova" ><i class="ion-social-github-outline icon-contact u-center-text"></i></a>
         <p class="font-small" >irenekochetkova</p>
       </div>
     </div>
