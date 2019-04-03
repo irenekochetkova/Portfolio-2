@@ -18,9 +18,10 @@ color-dark-green: #94a80d;
 html {
   background-color:  #fff;
   color: #555;
-  font-family: 'Lato', 'Arial', sans-serif;
-  font-weight: 300;
-  font-size: 20px;
+  /*font-family: 'Lato', 'Arial', sans-serif;*/
+  font-family: 'Crimson+Text', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
 }
@@ -81,12 +82,12 @@ h3 {
   word-spacing: 4px;
 }
 
-h4 {
+h6 {
   font-size: 100%;
   word-spacing: 2px;
   font-weight: 300;
-  margin-bottom: 30px;
-  margin-top: 30px;
+  margin-bottom: 10px;
+  /*margin-top: 30px;*/
   letter-spacing: 1px;
   color: #fff;
  
@@ -102,6 +103,17 @@ h5 {
   color: #555;
   text-transform: uppercase;
 
+}
+
+h4 {
+  font-size: 140%;
+  word-spacing: 2px;
+  font-weight: 400;
+  /*margin-bottom: 30px;*/
+  margin-top: 20px;
+  letter-spacing: 1px;
+  color: #fff;
+  word-spacing: 4px;
 }
 
 h2:after {
@@ -128,6 +140,10 @@ h2:after {
   color: #555;
   /*color: #94a80d;*/
   font-weight: 400;
+}
+
+.font-dark {
+  color: #64656d !important;
 }
 
 .font-white {
@@ -188,7 +204,7 @@ input[type=submit] {
 .btn-ghost:link,
 .btn-ghost:visited,
 button {
-  border: 1px solid #A9C00F;
+  border: 2px solid #A9C00F;
   color: #94a80d;
 }
 
@@ -210,7 +226,7 @@ input[type=submit]:active {
 .btn-ghost:hover,
 .btn-ghost:active,
 button {
-  border: 1px solid #94a80d;
+  border: 2px solid #94a80d;
   color: #fff;
 }
 
@@ -300,6 +316,13 @@ button {
   margin-bottom: 10px;
 }
 
+.icon-small-about {
+  font-size: 200%;
+  display: block;
+  color: #A9C00F;
+  /*margin-bottom: 10px;*/
+}
+
 .icon-git {
   font-size: 200%;
   float: right;
@@ -377,12 +400,14 @@ header {
 
 .text-box {
    margin-bottom: 45px;
-   margin-top: 45px;
-  padding: 55px 15px 55px 15px;
+   /*margin-top: 45px;*/
+  /*padding: 55px 15px 55px 15px;*/
+  padding-top: 55px;
+  padding-bottom: 55px;
 }
 
 .logo {
-  height: 60px;
+  height: 50px;
   width: auto;
   float: left;
   margin-top: 20px;
@@ -390,7 +415,7 @@ header {
 
 .logo-black { 
   display: none;
-  height: 50px;
+  height: 40px;
   width: auto;
   float: left;
   margin: 5px 0; 
@@ -415,6 +440,7 @@ header {
   float: right;
   list-style: none;
   margin-top: 55px;
+
 
 }
 
